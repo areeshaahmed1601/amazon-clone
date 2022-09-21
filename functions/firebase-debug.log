@@ -1,0 +1,255 @@
+[debug] [2022-09-21T09:18:59.068Z] ----------------------------------------------------------------------
+[debug] [2022-09-21T09:18:59.072Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\walik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-09-21T09:18:59.074Z] CLI Version:   11.9.0
+[debug] [2022-09-21T09:18:59.074Z] Platform:      win32
+[debug] [2022-09-21T09:18:59.074Z] Node Version:  v18.9.0
+[debug] [2022-09-21T09:18:59.365Z] Time:          Wed Sep 21 2022 14:18:59 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-09-21T09:18:59.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-21T09:18:59.771Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-21T09:18:59.772Z] > authorizing via signed-in user (areeshaahmed1601@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-09-21T09:18:59.994Z] [hub] writing locator at C:\Users\walik\AppData\Local\Temp\hub-clone-13cf6.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-09-21T09:19:00.759Z] defaultcredentials: writing to file C:\Users\walik\AppData\Roaming\firebase\areeshaahmed1601_gmail_com_application_default_credentials.json
+[debug] [2022-09-21T09:19:01.156Z] Setting GAC to C:\Users\walik\AppData\Roaming\firebase\areeshaahmed1601_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\walik\\AppData\\Roaming\\firebase\\areeshaahmed1601_gmail_com_application_default_credentials.json"}}
+[debug] [2022-09-21T09:19:01.158Z] > refreshing access token with scopes: []
+[debug] [2022-09-21T09:19:01.162Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-21T09:19:01.162Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-21T09:19:01.773Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-21T09:19:01.773Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-21T09:19:01.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig [none]
+[debug] [2022-09-21T09:19:02.432Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig 200
+[debug] [2022-09-21T09:19:02.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig {"projectId":"clone-13cf6","storageBucket":"clone-13cf6.appspot.com"}
+[debug] [2022-09-21T09:19:02.727Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-21T09:19:02.728Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-09-21T09:19:02.728Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\walik\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\walik\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-09-21T09:19:06.378Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\walik\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\walik\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-09-21T09:19:06.485Z] Validating nodejs source
+[debug] [2022-09-21T09:20:24.506Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-09-21T09:20:24.514Z] Building nodejs source
+[debug] [2022-09-21T09:20:24.514Z] Analyzing nodejs backend spec
+[debug] [2022-09-21T09:20:24.519Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-09-21T09:20:34.410Z] Serving at port 9005
+
+[debug] [2022-09-21T09:20:40.035Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-09-21T09:20:40.055Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-13cf6/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-13cf6/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-09-21T10:14:46.931Z] ----------------------------------------------------------------------
+[debug] [2022-09-21T10:14:46.935Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\walik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-09-21T10:14:46.936Z] CLI Version:   11.9.0
+[debug] [2022-09-21T10:14:46.936Z] Platform:      win32
+[debug] [2022-09-21T10:14:46.936Z] Node Version:  v18.9.0
+[debug] [2022-09-21T10:14:46.938Z] Time:          Wed Sep 21 2022 15:14:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-09-21T10:14:46.938Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-21T10:14:47.529Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-21T10:14:47.530Z] > authorizing via signed-in user (areeshaahmed1601@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-13cf6. This may result in unexpected behavior. 
+[debug] [2022-09-21T10:14:47.776Z] [hub] writing locator at C:\Users\walik\AppData\Local\Temp\hub-clone-13cf6.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-09-21T10:14:48.089Z] defaultcredentials: writing to file C:\Users\walik\AppData\Roaming\firebase\areeshaahmed1601_gmail_com_application_default_credentials.json
+[debug] [2022-09-21T10:14:48.218Z] Setting GAC to C:\Users\walik\AppData\Roaming\firebase\areeshaahmed1601_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\walik\\AppData\\Roaming\\firebase\\areeshaahmed1601_gmail_com_application_default_credentials.json"}}
+[debug] [2022-09-21T10:14:48.220Z] > refreshing access token with scopes: []
+[debug] [2022-09-21T10:14:48.223Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-21T10:14:48.224Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-21T10:14:48.624Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-21T10:14:48.625Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-21T10:14:48.702Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig [none]
+[debug] [2022-09-21T10:14:49.236Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig 200
+[debug] [2022-09-21T10:14:49.236Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-13cf6/adminSdkConfig {"projectId":"clone-13cf6","storageBucket":"clone-13cf6.appspot.com","locationId":"us-central"}
+[debug] [2022-09-21T10:14:49.416Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-21T10:14:49.417Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-09-21T10:14:49.417Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\walik\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\walik\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-09-21T10:14:50.125Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\walik\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\walik\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-09-21T10:14:50.245Z] Validating nodejs source
+[debug] [2022-09-21T10:15:28.628Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-09-21T10:15:28.629Z] Building nodejs source
+[debug] [2022-09-21T10:15:28.629Z] Analyzing nodejs backend spec
+[debug] [2022-09-21T10:15:28.632Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-09-21T10:15:34.629Z] Serving at port 9005
+
+[debug] [2022-09-21T10:15:39.632Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-09-21T10:15:39.650Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-13cf6/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-13cf6/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-09-21T10:29:44.351Z] File C:\Users\walik\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\walik\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-09-21T10:29:45.360Z] Validating nodejs source
+[debug] [2022-09-21T10:30:08.652Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-09-21T10:30:08.653Z] Building nodejs source
+[debug] [2022-09-21T10:30:08.653Z] Analyzing nodejs backend spec
+[debug] [2022-09-21T10:30:08.655Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-09-21T10:30:12.926Z] Serving at port 9005
+
+[debug] [2022-09-21T10:30:15.942Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-09-21T10:30:15.959Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-09-21T10:39:48.052Z] File C:\Users\walik\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\walik\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-09-21T10:39:49.294Z] Validating nodejs source
+[debug] [2022-09-21T10:40:29.613Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-09-21T10:40:29.639Z] Building nodejs source
+[debug] [2022-09-21T10:40:29.639Z] Analyzing nodejs backend spec
+[debug] [2022-09-21T10:40:29.665Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-09-21T10:40:35.315Z] Serving at port 9005
+
+[debug] [2022-09-21T10:40:39.156Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-09-21T10:40:39.264Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
